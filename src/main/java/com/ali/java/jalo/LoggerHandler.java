@@ -33,8 +33,7 @@ public class LoggerHandler extends Handler {
 		Path p = null;
 		Calendar calendar = Calendar.getInstance();
 		// check input parameter
-		if (fileName == null || fileName == "") { 
-			try { System.out.println(" Creating path for file ");}catch(Exception e) {}
+		if (fileName == null || fileName == "") {  
 			p = Paths.get("");
 			System.out.println(p.getFileName().toAbsolutePath());
 			try { Paths.get("").toAbsolutePath().normalize().toFile().mkdirs();}catch(Exception e) {}
@@ -44,8 +43,7 @@ public class LoggerHandler extends Handler {
 					+ "_M" + calendar.get(Calendar.MINUTE) + "_S" + calendar.get(Calendar.SECOND)   
 					+ "_ML" + calendar.get(Calendar.MILLISECOND)+".log.txt";  
 		} 
-		try { 
-			try {  System.out.println("Creating logger file");}catch(Exception e) {};
+		try {  
 			 File f = new File(fileName);
 			 if(!f.exists()) {
 				 try {
