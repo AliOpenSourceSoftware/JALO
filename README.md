@@ -17,13 +17,17 @@ Logger logger = new Logger()
 
 ### Info log
 Logger.info(msg);
+
 Logger.info(caller, method, msg);
 ### Warning log
 Logger.warning(msg);
+
 Logger.warning(caller, method,  msg);
 ### Error log
 Logger.error(msg);
+
 Logger.error(caller, method, msg);
+
 Logger.error(caller, method, msg, exception);
 ### Severe log
 Logger.severe(calller, method, msg,  exception);
@@ -33,13 +37,17 @@ Logging for the instance and the static logger are almost identical. Instance lo
 
 ### Info log
 logger.infop(msg);
+
 logger.infop(caller, method, msg);
 ### Warning log
 logger.warningp(msg);
+
 logger.warningp(caller, method,  msg);
 ### Error log
 logger.errorp(msg);
+
 logger.errorp(caller, method,  msg);
+
 logger.errorp(caller, method,  msg, exception); 
 ### Severe log
 logger.severep(caller, method, msg,  exception);
@@ -48,9 +56,11 @@ logger.severep(caller, method, msg,  exception);
 public static java.util.logging.Logger getLogger(string);
 ### Quick log to level
 Logger.log(level, msg);
+
 logger.logp(level, msg);
 ### Quick Info log
 Logger.log(msg)
+
 logger.logp(msg);
  	
 	 
