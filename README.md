@@ -4,7 +4,7 @@ A basic java utility logger wrapper with a custom handler that is designed to wr
 
 
 If desired, set the filename of the desired logging file. This must be done before instantiating an instance of the logger or calling the init() method.
-###Set logger file
+### Set logger file
 Logger.fileName=fileName //can be path with filename
 
 Initialize the logger if you want to use it statically first
@@ -13,43 +13,43 @@ Logger.init()
 Creating and instance of the logger also calls the init() function internally. No neet to call init() manually if you use this approach.
 Logger logger = new Logger()
 
-##Static logging methods
+## Static logging methods
 
-###Info log
+### Info log
 Logger.info(msg);
 Logger.info(caller, method, msg);
-###Warning log
+### Warning log
 Logger.warning(msg);
 Logger.warning(caller, method,  msg);
-###Error log
+### Error log
 Logger.error(msg);
 Logger.error(caller, method, msg);
 Logger.error(caller, method, msg, exception);
-###Severe log
+### Severe log
 Logger.severe(calller, method, msg,  exception);
 
-##Instance logging
+## Instance logging
 Logging for the instance and the static logger are almost identical. Instance logging methods are followed by a 'p' while 
 
-###Info log
+### Info log
 logger.infop(msg);
 logger.infop(caller, method, msg);
-###Warning log
+### Warning log
 logger.warningp(msg);
 logger.warningp(caller, method,  msg);
-###Error log
+### Error log
 logger.errorp(msg);
 logger.errorp(caller, method,  msg);
 logger.errorp(caller, method,  msg, exception); 
-###Severe log
+### Severe log
 Logger.severe(caller, method, msg,  exception);
 	          
-##Additional Logging Methods
+## Additional Logging Methods
 public static java.util.logging.Logger getLogger(string);
-###Quick log to level
+### Quick log to level
 Logger.log(level, msg);
 logger.logp(level, msg);
-###Quick Info log
+### Quick Info log
 Logger.log(msg)
 logger.logp(msg);
  	
