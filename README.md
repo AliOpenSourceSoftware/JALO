@@ -4,6 +4,31 @@ A basic java utility logger wrapper with a custom handler that is designed to wr
 
 
 If desired, set the filename of the desired logging file. This must be done before instantiating an instance of the logger or calling the init() method.
+### Installation
+#### Maven  
+``` 
+<repositories>
+  <repository>
+    <id>aaronali-Java</id>
+    <url>https://packagecloud.io/aaronali/Java/maven2</url>
+    <releases>
+      <enabled>true</enabled>
+    </releases>
+    <snapshots>
+      <enabled>true</enabled>
+    </snapshots>
+  </repository>
+</repositories> 
+``` 
+
+``` 
+<dependency>
+  <groupId>com.ali.java</groupId>
+  <artifactId>jalo</artifactId>
+  <version>1.0.0</version>
+</dependency>
+``` 
+
 ### Set logger file
 Logger.fileName=fileName //can be path with filename
 
