@@ -42,7 +42,7 @@ logger.errorp(msg);
 logger.errorp(caller, method,  msg);
 logger.errorp(caller, method,  msg, exception); 
 ### Severe log
-Logger.severe(caller, method, msg,  exception);
+logger.severep(caller, method, msg,  exception);
 	          
 ## Additional Logging Methods
 public static java.util.logging.Logger getLogger(string);
